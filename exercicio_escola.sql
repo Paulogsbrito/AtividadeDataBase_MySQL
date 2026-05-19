@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS escola;
 CREATE DATABASE escola;
 
 USE escola;
@@ -28,7 +27,7 @@ SELECT * FROM tb_alunos WHERE nota > 7.0;
 
 UPDATE tb_alunos SET nota = 7.5 WHERE id IN (6);
 UPDATE tb_alunos SET status = "Aprovado" WHERE id IN (6);
-SELECT * FROM tb_alunos;
+SELECT * FROM tb_alunos WHERE id IN (6);
 
 
 
